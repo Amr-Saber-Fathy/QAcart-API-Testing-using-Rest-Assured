@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Allure Report Integration">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+    <test name="User API Testing">
+        <classes>
+            <class name="com.qacart.user.TestRegistrationUsingPOJOClass"/>
+            <class name="com.qacart.user.TestLogin"/>
+        </classes>
+    </test>
+    <test name="Tasks API Testing">
+        <classes>
+            <class name="com.qacart.tasks.TestAddTask"/>
+        </classes>
+    </test>
+</suite>
